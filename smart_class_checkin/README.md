@@ -1,17 +1,32 @@
 # smart_class_checkin
 
-A new Flutter project.
+Flutter application for the Smart Class Check-in prototype.
 
-## Getting Started
+## Main Capabilities
 
-This project is a starting point for a Flutter application.
+- Check in with GPS and QR verification
+- Record previous topic, expected topic, and pre-class mood
+- Finish class with GPS and QR verification
+- Record learned content, feedback, and post-class feeling
+- Save attendance and reflection data locally with SQLite
 
-A few resources to get you started if this is your first Flutter project:
+## Run
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+```bash
+flutter pub get
+flutter run -d chrome --web-port 3000
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Notes
+
+- For demo QR scanning, any non-empty QR code is accepted.
+- Web camera permission is requested by the browser when the scanner opens.
+- Firebase integration is prepared in code, but project configuration is not added yet.
+
+## Repository Context
+
+The repository root contains:
+
+- `PRD.md`
+- `README.md`
+- `smart_class_checkin/`
